@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Login</title>
     <script>
-        // Function to handle the form submission and print first and last name
+        // JavaScript function to handle form submission and alert full name
         function getFormValue() {
-            // Get the values from the form fields
+            // Get the values from the input fields
             const firstName = document.getElementById("firstName").value;
             const lastName = document.getElementById("lastName").value;
-            
-            // Combine the first and last name and alert the full name
+
+            // Concatenate first and last name and alert the full name
             alert(firstName + " " + lastName);
         }
     </script>
@@ -20,7 +20,7 @@
 <body>
     <h2>Login Form</h2>
 
-    <!-- Form with first and last name fields -->
+    <!-- Form with First Name and Last Name input fields -->
     <form onsubmit="event.preventDefault(); getFormValue();">
         <label for="firstName">First Name:</label>
         <input type="text" id="firstName" name="firstName" required><br><br>
